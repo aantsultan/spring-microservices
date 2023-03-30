@@ -21,6 +21,7 @@
     <module>localconfig-repo</module>
     <module>restful-web-services</module>
     <module>spring-cloud-config-server</module>
+    <module>currency-exchange-service</module>
   </modules>
 
   <properties>
