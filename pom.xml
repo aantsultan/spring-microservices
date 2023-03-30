@@ -9,6 +9,13 @@
   <name>spring-microservices</name>
   <packaging>pom</packaging>
 
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.0.1</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
   <modules>
     <module>limit-service</module>
     <module>localconfig-repo</module>
@@ -18,17 +25,10 @@
 
   <properties>
     <spring-boot-parent-version>3.0.1</spring-boot-parent-version>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <java.version>17</java.version>
   </properties>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>${spring-boot-parent-version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
   <build>
     <plugins>
