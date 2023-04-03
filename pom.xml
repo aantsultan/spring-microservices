@@ -25,6 +25,8 @@
     <module>currency-conversion-service</module>
     <module>naming-server</module>
     <module>api-gateway</module>
+    <module>currency-conversion-service-kubernetes</module>
+    <module>currency-exchange-service-kubernetes</module>
   </modules>
 
   <properties>
