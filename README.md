@@ -13,4 +13,14 @@ To **build** docker-image, you have to enter into your specific module directory
 
     mvn spring-boot:build-image -DskipTests
 
+To **create** service and deployment (pods) on kubernetes, please use module `[module]-kubernates`. And run command 
+
+    kubectl apply -f deployment.yaml
+
+To **delete** pods on kubernetes, type such as command below
+
+    kubectl delete all -l app=[label]
+
+To *get* value of `label`, you can search in `deployment.yaml`
+
 
