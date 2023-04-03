@@ -4,6 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>currency-exchange-service-kubernetes</artifactId>
 	<name>currency-exchange-service-kubernetes</name> <!-- CHANGE-KUBERNETES -->
+	<version>1.1-SNAPSHOT</version>
 
 	<parent>
 		<artifactId>spring-microservices</artifactId>
