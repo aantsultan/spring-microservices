@@ -1,4 +1,4 @@
-package com.microservices.currencyexchangeservice;
+package com.microservices.currencyexchangeservice.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

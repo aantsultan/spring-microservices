@@ -1,17 +1,18 @@
 MICROSERVICES WITH SPRING-BOOT AND SPRING-CLOUD
 -
+Project `spring-microservice` is the example of how to implement spring boot and spring cloud tobe contained by docker and run with kubernetes
 
-This application is running based on `docker-compose.yaml`
+First, you have to **build** docker-image, you have to enter into your specific module directory such as `api-gateway` , `currency-exchange`, `currency-conversion` or `naming-server` with command terminal such as below
+
+    mvn spring-boot:build-image -DskipTests
+
+Then you can run this application based on `docker-compose.yaml`
 
 To **running** application, please use command terminal below in your root directory project
 
     docker-compose up
 
 To **stop** application, just typing `Ctrl + C` in terminal
-
-To **build** docker-image, you have to enter into your specific module directory such as `api-gateway` , `currency-exchange`, `currency-conversion` or `naming-server` with command terminal such as below
-
-    mvn spring-boot:build-image -DskipTests
 
 To **create** service and deployment (pods) on kubernetes, please use module `[module]-kubernates`. And run command 
 
