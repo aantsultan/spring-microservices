@@ -1,5 +1,7 @@
-package com.microservices.currencyconversionservice;
+package com.microservices.currencyconversionservice.controller;
 
+import com.microservices.currencyconversionservice.model.CurrencyConversion;
+import com.microservices.currencyconversionservice.proxy.CurrencyExchangeProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
